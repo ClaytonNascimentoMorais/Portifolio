@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="Favicons/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pokémon 2.0</h1>
+    <p style="font-family: Mario;">Nome Completo: <input type="text" id="Nome" ></p>
+    <p style="font-family: Mario;">Email: <input type="text" id="Email"></p>
+    <p style="font-family: Mario;">CPF: <input type="text" id="Cpf"></p>
+    <p style="font-family: Mario;">Telefone: <input type="number" id="Telefone"></p>
+    <p style="font-family: Mario;"><input type="button" value="Verificar"  onclick="Cadastro()"></p>
+    <div id="res"></div>
+    <a href="pagina02.html"><input type="button" value="Proxima pagina"></a>
+    <script style="font-family: Arial
+    ;">
+        function Cadastro(){
+            var n = document.getElementById('Nome')
+            var nome = String(n.value)
+            var email = document.getElementById("Email")
+            var Email = String(email.value)
+            var cpf = document.getElementById("Cpf")
+            var CPF = String(cpf.value) 
+            var telefone = document.getElementById("Telefone")
+            var Telefone = Number(telefone.value)
+            var res = document.getElementById('res')
+            res.innerHTML = `<P>Seu nome é <strong>${nome}</strong></P>`
+            res.innerHTML += `<p>Seu email é <strong>${Email}</strong></p>`
+            res.innerHTML += `<P>Seu cpf é <strong>${CPF}</strong></P>`
+            res.innerHTML += `<p>Seu telefone é <strong>${Telefone}</strong></p>`
+        }   
+    </script>
+     
+</body>
+</html>

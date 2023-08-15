@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Mario;
+    src: url(Fontes/Comics\ Deluxe.ttf);
+}
+@font-face {
+    font-family: Pokemon;
+    src: url(Fontes/Pokemon\ Hollow.ttf);
+}
+
+body{
+    background-color:#5F3AF2;
+}
+h1{
+    text-align: center;
+    font-family: Pokemon;
+    font-weight: bolder;
+ color:#F2B807 ;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #F2B807;
+}
+input{
+    font-family: Mario;
+    color: #223059;
+}
